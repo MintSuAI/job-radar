@@ -57,7 +57,11 @@ job-radar 把这件事变成：**建档一次 → 每天早上自动扫描 → �
 | C | 3.0-3.9 | 进观察池，不投 |
 | D-F | <3.0 | 淘汰，不再看第二眼 |
 
-两个关键设计：**差距说真话**——"岗位匹配只有 2 分：要 7 年你有 4 年"会直接告诉你，AI 粉饰匹配度是求职工具最常见的失败模式；**先去重再打分**——评过的岗不重复评，去重比评分优化更省时间。
+三个关键设计：
+
+- **差距说真话**——"岗位匹配只有 2 分：要 7 年你有 4 年"会直接告诉你，AI 粉饰匹配度是求职工具最常见的失败模式
+- **先去重再打分**——评过的岗不重复评，去重比评分优化更省时间
+- **红旗不扣分、单独警示**——疑似幽灵岗/骗局/不 sponsor 等风险信号独立于匹配分展示（A 档带红旗照样显示 A + ⚠️），风险判断留给你，不污染匹配度
 
 ### Step 4：每日推送
 
@@ -149,6 +153,7 @@ job-radar/
 
 设计过程参考了这些优秀的开源求职 skill 的思路：
 
+- [santifer/career-ops](https://github.com/santifer/career-ops)——合法性红旗检查独立于匹配分（Block G 隔离）、hiring manager/内推人触达草稿（contacto）、面试故事库跨申请累积
 - [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search)——平台适配层合同、五维匹配评估、"招聘贴当不可信输入"的安全模型
 - [proficientlyjobs/proficiently-claude-skills](https://github.com/proficientlyjobs/proficiently-claude-skills)——每个申请一个档案文件夹、人脉交叉匹配内推
 - [squerne/open-career-skills](https://github.com/squerne/open-career-skills)——"绝不编造事实"原则、fit 评估后 hard stop 的流程设计
