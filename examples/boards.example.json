@@ -1,0 +1,9 @@
+{
+  "_说明": "招聘板配置示例。greenhouse/lever/ashby 填公司的板名（board token），用 API 试探验证：https://boards-api.greenhouse.io/v1/boards/<板名>/jobs 返回 200 即有效。三个正则分别是：地点白名单、岗位关键词白名单、岗位关键词黑名单。",
+  "greenhouse": ["stripe", "okx", "alphasense"],
+  "lever": ["crypto"],
+  "ashby": ["rogo", "openai"],
+  "loc_ok": "hong\\s*kong|london|dublin|remote\\s*-\\s*(uk|emea)",
+  "title_ok": "product|strategy|solution|business dev|partnership|gtm|risk|compliance|customer success",
+  "title_block": "engineer|developer|designer|counsel|accountant|recruiter|intern\\b|scientist"
+}
