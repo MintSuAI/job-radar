@@ -90,7 +90,7 @@ LinkedIn、Boss 直聘这类平台的反爬系统专门识别 **API 模拟登录
 ## 安装
 
 ```bash
-git clone https://github.com/MintSoda23/job-radar.git
+git clone https://github.com/MintSuAI/job-radar.git
 cp -r job-radar ~/.claude/skills/job-radar
 ```
 
@@ -100,7 +100,7 @@ cp -r job-radar ~/.claude/skills/job-radar
 
 ## 配套：简历 skill
 
-job-radar 只负责**找岗和筛岗**，改简历会路由给专门的简历 skill。推荐配套安装 [mintsu-resume（薄荷简历）](https://github.com/MintSoda23)——写简历/改简历全流程：经历量化盘点 → 按 JD 定制 → 生成 A4 单页 PDF。两个 skill 的接口：job-radar 抓 JD 提关键词 → mintsu-resume 按关键词重写叙事。
+job-radar 只负责**找岗和筛岗**，改简历会路由给专门的简历 skill。推荐配套安装 [mintsu-resume（薄荷简历）](https://github.com/MintSuAI)——写简历/改简历全流程：经历量化盘点 → 按 JD 定制 → 生成 A4 单页 PDF。两个 skill 的接口：job-radar 抓 JD 提关键词 → mintsu-resume 按关键词重写叙事。
 
 没装简历 skill 也能用，AI 会对话式帮你改，只是没有模板和 PDF 输出。
 
